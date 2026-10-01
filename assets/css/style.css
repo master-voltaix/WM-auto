@@ -701,3 +701,6 @@ button, input, select, textarea { font: inherit; color: inherit; }
 @media (max-width: 420px) {
   .hero h1 { font-size: 33px; }
 }
+
+/* icon centering: beats ".cinfo span { display: block }" */
+.cinfo .cinfo__ic { display: flex; }
