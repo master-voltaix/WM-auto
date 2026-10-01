@@ -101,3 +101,18 @@ document.querySelectorAll('.reveal').forEach(el => io ? io.observe(el) : el.clas
 // Highlight today's opening hours
 const today = document.querySelector(`.hours tr[data-day="${new Date().getDay()}"]`);
 if (today) today.classList.add('today');
+
+// Booking bar: preselect vehicle class from service cards, sensible date limits
+const bookClass = document.getElementById('b-klasse');
+document.querySelectorAll('[data-klasse]').forEach(el => el.addEventListener('click', () => {
+  if (bookClass) bookClass.selectedIndex = +el.dataset.klasse;
+}));
+const isoToday = new Date().toISOString().slice(0, 10);
+document.querySelectorAll('input[type="date"]').forEach(inp => { inp.min = isoToday; });
+document.querySelectorAll('form').forEach(form => {
+  const from = form.querySelector('[name="von"]'), to = form.querySelector('[name="bis"]');
+  if (from && to) from.addEventListener('change', () => {
+    to.min = from.value || isoToday;
+    if (to.value && to.value < from.value) to.value = from.value;
+  });
+});

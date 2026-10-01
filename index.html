@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DRIVE7 Autovermietung Köln – Mietwagen, Transporter &amp; Langzeitmiete</title>
-<meta name="description" content="DRIVE7 Autovermietung in Köln: Kleinwagen, Kombis, SUVs, Transporter und Premiumfahrzeuge zu fairen Preisen. Online anfragen, Rückgabe rund um die Uhr.">
+<title>Autovermietung Köln ab 29 €/Tag – Mietwagen &amp; Transporter | DRIVE7</title>
+<meta name="description" content="Mietwagen in Köln ab 29 € pro Tag: Pkw, Transporter &amp; Premiumfahrzeuge. In 10 Minuten abholbereit, Teilkasko inklusive, Rückgabe 24/7. Jetzt Verfügbarkeit anfragen!">
 <meta name="theme-color" content="#2f3036">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css?v=3">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 </head>
 <body>
@@ -28,10 +28,11 @@
       <a href="index.html#preise">Preise</a>
       <a href="ueber-uns.html">Über uns</a>
       <a href="kontakt.html">Kontakt</a>
-      <a href="kontakt.html#formular" class="btn btn--red nav__cta">Jetzt reservieren</a>
+      <a href="#buchen" class="btn btn--red nav__cta">Jetzt reservieren</a>
     </nav>
     <a class="header__tel" href="tel:+492217775533"><small>Hotline</small><b>0221 777 55 33</b></a>
-    <a href="kontakt.html#formular" class="btn btn--red">Reservieren</a>
+    <a href="#buchen" class="btn btn--red">Jetzt anfragen</a>
+    <a class="header__call" href="tel:+492217775533" aria-label="Jetzt anrufen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
     <button class="burger" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
@@ -42,63 +43,49 @@
 <section class="hero">
   <div class="hero__visual"></div>
   <div class="hero__red"></div>
-  <img class="hero__car" src="assets/img/hero-car.webp" alt="Roter Mittelklassewagen aus der DRIVE7 Mietflotte" width="1536" height="1024">
+  <img class="hero__car" src="assets/img/hero-car.webp" alt="Roter Mittelklasse-Mietwagen von DRIVE7 Köln" width="1536" height="1024">
   <div class="wrap">
     <div class="hero__text">
-      <h1>Der beste Weg, <span>ein Auto zu mieten</span></h1>
-      <div class="dots"><i class="on"></i><i></i></div>
-      <form class="quick js-form" autocomplete="on">
-        <h2>Schnellanfrage – kostenlos &amp; unverbindlich</h2>
-        <div class="quick__grid">
-          <label><input type="text" name="name" placeholder="Name" required></label>
-          <label><input type="tel" name="tel" placeholder="Telefon" required></label>
-          <label><select name="klasse" aria-label="Fahrzeugklasse">
-            <option>Kleinwagen</option><option>Kompaktklasse</option><option selected>Mittelklasse</option><option>Kombi</option><option>SUV</option><option>Transporter</option><option>Premium</option>
-          </select></label>
-          <label><input type="text" name="zeitraum" placeholder="Zeitraum (z. B. 3.–7. Okt.)"></label>
-          <label class="check" style="grid-column:1/-1"><input type="checkbox" required> Ich stimme der Datenverarbeitung zu (Datenschutz).</label>
-        </div>
-        <button type="submit" class="btn">Anfrage senden</button>
-        <p class="form__msg">Vielen Dank! Wir rufen Sie in Kürze zurück.</p>
-      </form>
-      <div class="hero__contact">
-        <a href="tel:+492217775533">Tel <b>0221 777 55 33</b></a>
-        <a href="https://wa.me/491765833333" target="_blank" rel="noopener">WhatsApp <b>0176 583 33 33</b></a>
+      <span class="hero__tag"><i></i>Autovermietung in Köln-Braunsfeld</span>
+      <h1>Mietwagen in Köln <span>ab <em>29 €</em> pro Tag</span></h1>
+      <p class="hero__sub">Pkw, Transporter und Premiumfahrzeuge – in 10 Minuten abholbereit. Faire Festpreise ohne versteckte Kosten.</p>
+      <ul class="hero__checks">
+        <li>300 km pro Tag inklusive</li>
+        <li>Teilkasko inklusive</li>
+        <li>Kostenlos stornieren bis 24 h vorher</li>
+      </ul>
+      <div class="hero__cta">
+        <a href="#buchen" class="btn btn--red btn--lg">Verfügbarkeit anfragen</a>
+        <a href="tel:+492217775533" class="btn btn--tel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>0221 777 55 33</a>
       </div>
+      <p class="hero__rating"><span class="stars">★★★★★</span> <b>4,9 / 5</b> aus über 380 Kundenbewertungen</p>
     </div>
   </div>
 </section>
 
-<!-- MOSAIC -->
-<section class="mosaic" id="anfrage">
+<!-- BUCHEN -->
+<section class="book" id="buchen">
   <div class="wrap">
-    <div class="mosaic__grid">
-      <div class="m-photo m-a reveal"><img src="assets/img/service-premium.jpg" alt="Schwarzes Coupé in der Tiefgarage" loading="lazy"></div>
-      <div class="m-inq">
-        <h2 class="title" style="font-size:30px">Online <b>Anfrage</b></h2>
-        <div class="offer"><div><b>Kompaktklasse · Automatik</b><span>Heute verfügbar · <em>ab 39 €/Tag</em></span></div><a class="btn btn--line" href="kontakt.html#formular">Anfragen</a></div>
-        <div class="offer"><div><b>Kombi · Hybrid</b><span>Ab morgen verfügbar · <em>ab 59 €/Tag</em></span></div><a class="btn btn--line" href="kontakt.html#formular">Anfragen</a></div>
-        <div class="offer"><div><b>Transporter · 3,5 t</b><span>Wochenende frei · <em>ab 79 €/Tag</em></span></div><a class="btn btn--line" href="kontakt.html#formular">Anfragen</a></div>
-      </div>
-      <div class="m-photo m-b reveal"><img src="assets/img/fleet-1.jpg" alt="Front einer dunklen Limousine" loading="lazy"></div>
-      <nav class="m-links" aria-label="Schnellzugriff">
-        <a href="kontakt.html#formular"><small>Reservierung</small><b>Online-Anfrage</b></a>
-        <a href="#flotte"><small>Fahrzeuge</small><b>Unsere Flotte</b></a>
-        <a href="ueber-uns.html"><small>Unternehmen</small><b>Über uns</b></a>
-        <a href="kontakt.html"><small>Standort</small><b>Anfahrt</b></a>
-      </nav>
-      <div class="m-red"><b>Ihr Partner<br>für Mobilität</b><i></i></div>
-      <div class="m-photo m-c reveal"><img src="assets/img/service-kurz.jpg" alt="Kompaktwagen in der Stadt bei Regen" loading="lazy"></div>
-      <div class="m-company">
-        <span class="eyebrow">Unser Unternehmen</span>
-        <p>Seit 2010 vermieten wir in Köln gepflegte Fahrzeuge zu fairen Preisen – persönlich, schnell und ohne Kleingedrucktes. Abholung in 10 Minuten, Rückgabe rund um die Uhr.</p>
-      </div>
-      <div class="m-stats">
-        <div><b>15<sup>+</sup></b><span>Jahre Erfahrung</span></div>
-        <div><b>4.000<sup>+</sup></b><span>Zufriedene Kunden</span></div>
-        <div><b>120</b><span>Fahrzeuge</span></div>
-      </div>
-    </div>
+    <form class="book__form js-form" autocomplete="on">
+      <div class="book__head"><b>Schnellanfrage</b><span>kostenlos &amp; unverbindlich</span></div>
+      <label><small>Fahrzeugklasse</small>
+        <select name="klasse" id="b-klasse">
+          <option>Kleinwagen · ab 29 €</option><option>Kompaktklasse · ab 39 €</option><option selected>Mittelklasse · ab 49 €</option><option>Kombi · ab 59 €</option><option>SUV · ab 69 €</option><option>Transporter · ab 79 €</option><option>Premium · ab 119 €</option>
+        </select></label>
+      <label><small>Abholung</small><input type="date" name="von" required></label>
+      <label><small>Rückgabe</small><input type="date" name="bis" required></label>
+      <label><small>Ihre Telefonnummer</small><input type="tel" name="tel" placeholder="für den Rückruf" autocomplete="tel" required></label>
+      <button type="submit" class="btn btn--red">Angebot erhalten</button>
+      <p class="form__msg book__msg">Vielen Dank! Wir rufen Sie in Kürze mit Ihrem Angebot zurück.</p>
+    </form>
+    <p class="book__note">Antwort in der Regel innerhalb von 2 Stunden · Keine Vorauszahlung · Mit dem Absenden stimmen Sie der <a href="#">Datenschutzerklärung</a> zu.</p>
+
+    <ul class="usp">
+      <li><span class="usp__ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2M9 2h6"/></svg></span><div><b>In 10 Minuten startklar</b><span>Führerschein &amp; Ausweis genügen</span></div></li>
+      <li><span class="usp__ic"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg></span><div><b>Rundum versichert</b><span>Teilkasko im Preis enthalten</span></div></li>
+      <li><span class="usp__ic"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5M12 7v5l3 2"/></svg></span><div><b>Rückgabe 24/7</b><span>Schlüsselbox direkt am Standort</span></div></li>
+      <li><span class="usp__ic"><svg viewBox="0 0 24 24"><path d="M20 12V7H4v10h8"/><path d="M4 10h16M16 19l2 2 4-4"/></svg></span><div><b>Keine versteckten Kosten</b><span>Festpreis – auch ohne Kreditkarte</span></div></li>
+    </ul>
   </div>
 </section>
 
@@ -106,29 +93,29 @@
 <section class="services" id="leistungen">
   <div class="wrap">
     <div class="sec-head">
-      <div><span class="eyebrow">Was wir bieten</span><h2 class="title">Unsere <b>Leistungen</b></h2></div>
-      <p>Vom Kleinwagen für die Stadt bis zum Transporter für den Umzug – bei uns finden Sie das passende Fahrzeug für jeden Anlass.</p>
+      <div><span class="eyebrow">Fahrzeuge &amp; Preise</span><h2 class="title">Was möchten Sie <b>mieten?</b></h2></div>
+      <p>Wählen Sie Ihre Mietart – alle Preise inklusive Teilkasko und 300 Freikilometern pro Tag.</p>
     </div>
     <div class="services__grid">
-      <a href="kontakt.html#formular" class="svc reveal">
+      <a href="#buchen" data-klasse="0" class="svc reveal">
         <div class="svc__img"><img src="assets/img/service-kurz.jpg" alt="" loading="lazy"></div>
         <div class="svc__body"><span class="svc__num">01</span><h3>Kurzzeitmiete</h3><p>Flexibel ab einem Tag – ideal für Ausflüge, Termine oder als Ersatzwagen.</p>
-          <div class="svc__price"><b>ab 29 € <small>/ Tag</small></b><span class="more">Anfragen</span></div></div>
+          <div class="svc__price"><b>ab 29 € <small>/ Tag</small></b><span class="more">Jetzt anfragen</span></div></div>
       </a>
-      <a href="kontakt.html#formular" class="svc reveal">
+      <a href="#buchen" data-klasse="2" class="svc reveal">
         <div class="svc__img"><img src="assets/img/service-lang.jpg" alt="" loading="lazy"></div>
         <div class="svc__body"><span class="svc__num">02</span><h3>Langzeitmiete</h3><p>Ab 28 Tagen mit bis zu 20 % Rabatt und unbegrenzten Kilometern.</p>
-          <div class="svc__price"><b>ab 690 € <small>/ Monat</small></b><span class="more">Anfragen</span></div></div>
+          <div class="svc__price"><b>ab 690 € <small>/ Monat</small></b><span class="more">Jetzt anfragen</span></div></div>
       </a>
-      <a href="kontakt.html#formular" class="svc reveal">
+      <a href="#buchen" data-klasse="5" class="svc reveal">
         <div class="svc__img"><img src="assets/img/service-transporter.jpg" alt="" loading="lazy"></div>
         <div class="svc__body"><span class="svc__num">03</span><h3>Transporter</h3><p>Für Umzug und Gewerbe – vom Kastenwagen bis 3,5 t, mit Sackkarre auf Wunsch.</p>
-          <div class="svc__price"><b>ab 79 € <small>/ Tag</small></b><span class="more">Anfragen</span></div></div>
+          <div class="svc__price"><b>ab 79 € <small>/ Tag</small></b><span class="more">Jetzt anfragen</span></div></div>
       </a>
-      <a href="kontakt.html#formular" class="svc reveal">
+      <a href="#buchen" data-klasse="6" class="svc reveal">
         <div class="svc__img"><img src="assets/img/service-premium.jpg" alt="" loading="lazy"></div>
         <div class="svc__body"><span class="svc__num">04</span><h3>Premium</h3><p>Sportliche Coupés und Business-Limousinen für besondere Anlässe.</p>
-          <div class="svc__price"><b>ab 119 € <small>/ Tag</small></b><span class="more">Anfragen</span></div></div>
+          <div class="svc__price"><b>ab 119 € <small>/ Tag</small></b><span class="more">Jetzt anfragen</span></div></div>
       </a>
     </div>
   </div>
@@ -137,7 +124,7 @@
 <!-- FLOTTE -->
 <section class="fleet" id="flotte">
   <div class="wrap">
-    <div class="sec-head"><h2 class="title">Unsere <b>Flotte</b></h2><a href="kontakt.html#formular" class="more">Alle ansehen</a></div>
+    <div class="sec-head"><h2 class="title">Unsere <b>Flotte</b></h2><a href="#buchen" class="more">Verfügbarkeit anfragen</a></div>
   </div>
   <div class="fleet__grid">
     <div class="f-tile f-land"><img src="assets/img/service-lang.jpg" alt="Kombi auf einer Alpenstraße" loading="lazy"></div>
@@ -194,8 +181,62 @@
         </select></label>
       <label><small>Mietdauer (Tage)</small><input id="c-days" type="number" inputmode="numeric" min="1" max="365" value="7"></label>
       <div class="calc__out"><small>Gesamtpreis</small><strong id="c-total">309 €</strong><span id="c-note">inkl. 10 % Wochenrabatt</span></div>
-      <a href="kontakt.html#formular" class="btn btn--red">Reservieren</a>
+      <a href="#buchen" class="btn btn--red">Reservieren</a>
     </form>
+  </div>
+</section>
+
+<!-- MOSAIC -->
+<section class="mosaic" id="anfrage">
+  <div class="wrap">
+    <div class="mosaic__grid">
+      <div class="m-photo m-a reveal"><img src="assets/img/service-premium.jpg" alt="Schwarzes Coupé in der Tiefgarage" loading="lazy"></div>
+      <div class="m-inq">
+        <h2 class="title" style="font-size:30px">Heute <b>verfügbar</b></h2>
+        <div class="offer"><div><b>Kompaktklasse · Automatik</b><span>Heute verfügbar · <em>ab 39 €/Tag</em></span></div><a class="btn btn--line" href="#buchen" data-klasse="1">Anfragen</a></div>
+        <div class="offer"><div><b>Kombi · Hybrid</b><span>Ab morgen verfügbar · <em>ab 59 €/Tag</em></span></div><a class="btn btn--line" href="#buchen" data-klasse="3">Anfragen</a></div>
+        <div class="offer"><div><b>Transporter · 3,5 t</b><span>Wochenende frei · <em>ab 79 €/Tag</em></span></div><a class="btn btn--line" href="#buchen" data-klasse="5">Anfragen</a></div>
+      </div>
+      <div class="m-photo m-b reveal"><img src="assets/img/fleet-1.jpg" alt="Front einer dunklen Limousine" loading="lazy"></div>
+      <nav class="m-links" aria-label="Schnellzugriff">
+        <a href="#buchen"><small>Reservierung</small><b>Online-Anfrage</b></a>
+        <a href="#flotte"><small>Fahrzeuge</small><b>Unsere Flotte</b></a>
+        <a href="ueber-uns.html"><small>Unternehmen</small><b>Über uns</b></a>
+        <a href="kontakt.html"><small>Standort</small><b>Anfahrt</b></a>
+      </nav>
+      <div class="m-red"><b>Ihr Partner<br>für Mobilität</b><i></i></div>
+      <div class="m-photo m-c reveal"><img src="assets/img/service-kurz.jpg" alt="Kompaktwagen in der Stadt bei Regen" loading="lazy"></div>
+      <div class="m-company">
+        <span class="eyebrow">Unser Unternehmen</span>
+        <p>Seit 2010 vermieten wir in Köln gepflegte Fahrzeuge zu fairen Preisen – persönlich, schnell und ohne Kleingedrucktes. Abholung in 10 Minuten, Rückgabe rund um die Uhr.</p>
+      </div>
+      <div class="m-stats">
+        <div><b>15<sup>+</sup></b><span>Jahre Erfahrung</span></div>
+        <div><b>4.000<sup>+</sup></b><span>Zufriedene Kunden</span></div>
+        <div><b>120</b><span>Fahrzeuge</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEWERTUNGEN -->
+<section class="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Kundenstimmen</span><h2 class="title">Das sagen <b>unsere Kunden</b></h2></div>
+      <p class="reviews__score"><span class="stars">★★★★★</span><b>4,9 / 5</b> aus über 380 Bewertungen</p>
+    </div>
+    <div class="reviews__grid">
+      <figure class="review reveal"><span class="stars">★★★★★</span>
+        <blockquote>„Morgens angerufen, mittags saß ich im Auto. Preis genau wie am Telefon genannt, keine Überraschungen bei der Rückgabe.“</blockquote>
+        <figcaption><b>Sandra K.</b><span>Kompaktklasse · 5 Tage</span></figcaption></figure>
+      <figure class="review reveal"><span class="stars">★★★★★</span>
+        <blockquote>„Transporter für den Umzug gemietet – sauber, vollgetankt und die Rückgabe am Sonntagabend per Schlüsselbox war super unkompliziert.“</blockquote>
+        <figcaption><b>Deniz A.</b><span>Transporter · Wochenende</span></figcaption></figure>
+      <figure class="review reveal"><span class="stars">★★★★★</span>
+        <blockquote>„Wir mieten seit zwei Jahren regelmäßig Fahrzeuge für unsere Firma. Feste Ansprechpartner und faire Langzeitkonditionen.“</blockquote>
+        <figcaption><b>Thomas R.</b><span>Firmenkunde · Langzeitmiete</span></figcaption></figure>
+    </div>
   </div>
 </section>
 
@@ -322,6 +363,8 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js"></script>
+<div class="mbar"><a href="tel:+492217775533" class="mbar__call"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Anrufen</a><a href="#buchen" class="mbar__cta">Jetzt anfragen</a></div>
+
+<script src="assets/js/main.js?v=3"></script>
 </body>
 </html>
